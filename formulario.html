@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Luis Anderson Surco">
+    <meta name="descriptios" content="Nos dicamos a desarrollar paginas">
+    <meta mame="Keywords" content="html, html, desarrollador, cv, corricu
+    CurriculumVitae-HTML, CurriculumVitae, formulario">
+    <title>Formulario</title>
+    <link rel="icon" href="img/ft.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br>
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="150" required>
+    
+        
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Seleccionar</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+        <br>
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion" required></textarea>
+        
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        
+        <label for="codigo-postal">Código Postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal" required>
+        
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+        <br>
+        <label for="intereses">Intereses (selecciona al menos uno):</label>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">Deportes
+        <input type="checkbox" id="musica" name="intereses" value="musica">Música
+        <input type="checkbox" id="lectura" name="intereses" value="lectura">Lectura
+        <br>
+        <label for="foto">Foto de Perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        
+        <label for="cv">Cargar CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+      </form>
+      <br>
+      <hr>
+<button type="submit" value="Registrarse" onclick="location.href='proceso.html'">Cargar Formulario de Registro</button>
+
+</body>
+</html>
